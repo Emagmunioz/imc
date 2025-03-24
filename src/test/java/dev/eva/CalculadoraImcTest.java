@@ -12,5 +12,9 @@ public class CalculadoraImcTest {
         assertThat(imc, closeTo(22.86, 0.01));
 
     }
-
+    @Test
+    public void testObtenerResultadoImc() {
+        String resultado = CalculadoraImc.obtenerResultadoImc(22.86);
+        assertThat(resultado, is("Peso normal"));
+    }
 }
