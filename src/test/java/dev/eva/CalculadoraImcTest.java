@@ -9,7 +9,7 @@ public class CalculadoraImcTest {
     @Test
     public void testCalcularImc() {
         double imc = CalculadoraImc.calcularImc(70.5, 1.75);
-        assertThat(imc, closeTo(22.86, 0.01));
+        assertThat(imc, closeTo(22.86,0.01));
 
     }
     @Test
