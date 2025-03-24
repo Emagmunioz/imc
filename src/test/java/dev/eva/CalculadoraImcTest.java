@@ -8,10 +8,13 @@ import org.junit.jupiter.api.Test;
 public class CalculadoraImcTest {
     @Test
     public void testCalcularImc() {
-        double imc = CalculadoraImc.calcularImc(70.5, 1.75);
-        assertThat(imc, closeTo(22.86,0.01));
-
+        Persona persona = new Persona(70.5, 1.75);
+        double imc = CalculadoraImc.calcularImc(persona);
+        assertThat(imc, closeTo(22.857, 0.01));
     }
+
+        
+    
     @Test
     public void testObtenerResultadoImc() {
         String resultado = CalculadoraImc.obtenerResultadoImc(22.86);

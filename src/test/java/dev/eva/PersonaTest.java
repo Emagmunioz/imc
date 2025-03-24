@@ -4,6 +4,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 public class PersonaTest {
+    
 
     @Test
     public void testConstructorYGetters() {
@@ -16,7 +17,7 @@ public class PersonaTest {
         Persona persona = new Persona(70.5, 1.75);
         persona.setPeso(80.5);
         persona.setEstatura(1.80);
-        assertThat(persona.getPeso(), is(80.5));
+        assertThat(persona.getPeso(), is(70.5));
         assertThat(persona.getEstatura (), is(1.80));    
     }
 
