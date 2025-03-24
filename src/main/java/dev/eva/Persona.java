@@ -13,5 +13,11 @@ public class Persona {
     public double getEstatura() {
         return estatura;
     }
+    public void setPeso(double peso) {
+        
+    }
+    public void setEstatura(double estatura) {
+        this.estatura = estatura;
+    }
 
 }
