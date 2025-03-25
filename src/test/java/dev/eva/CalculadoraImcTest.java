@@ -12,7 +12,9 @@ public class CalculadoraImcTest {
     }
     @Test
     public void testClasificarImc() {
-        // Rangos actualizados según OMS extendida
+        
+        CalculadoraImc calculadora = new CalculadoraImc();
+        
         assertThat(calculadora.clasificar(15.0), is("Delgadez severa"));
         assertThat(calculadora.clasificar(16.5), is("Delgadez moderada"));
         assertThat(calculadora.clasificar(17.5), is("Delgadez leve"));
