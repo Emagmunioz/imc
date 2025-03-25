@@ -25,7 +25,7 @@ Clasifica el resultado según rangos estándar
 Instalación
 bash
 Copy
-git clone 
+git clone https://github.com/Emagmunioz/imc.git
 cd imc
 mvn install
 Uso
